@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                git 'https://github.com/Kaavian-Systems-Pvt-Ltd/employee-checkin-system.git'
+                git credentialsId: 'Meenakshi', url: 'https://github.com/meena-kaavian/printHelloWorld.git'
                 bat 'npm install'
             }
         }
